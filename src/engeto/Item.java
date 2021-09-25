@@ -17,6 +17,18 @@ public class Item {
 
     private BigDecimal price;
 
+    public Item(String partNo, String serialNo, String name, String description, Integer numberInStock, BigDecimal price) {
+        this.partNo = partNo;
+        this.serialNo = serialNo;
+        this.name = name;
+        this.description = description;
+        this.numberInStock = numberInStock;
+        this.price = price;
+    }
+
+    public Item() {
+    }
+
     public Integer getId() {
         return id;
     }
@@ -24,6 +36,7 @@ public class Item {
     public void setId(Integer id) {
         this.id = id;
     }
+
 
     public String getPartNo() {
         return partNo;
@@ -33,6 +46,7 @@ public class Item {
         this.partNo = partNo;
     }
 
+
     public String getSerialNo() {
         return serialNo;
     }
@@ -41,6 +55,7 @@ public class Item {
         this.serialNo = serialNo;
     }
 
+
     public String getName() {
         return name;
     }
@@ -48,6 +63,7 @@ public class Item {
     public void setName(String name) {
         this.name = name;
     }
+
 
     public String getDescription() {
         return description;
